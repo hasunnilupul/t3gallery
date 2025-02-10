@@ -6,7 +6,7 @@ import { extractRouterConfig } from "uploadthing/server";
 import "@uploadthing/react/styles.css";
 
 import "~/styles/globals.css";
-import TopNav from "~/app/_components/topnav";
+import TopNav from "./_components/topnav";
 import { uploadThingFileRouter } from "~/app/api/uploadthing/core";
 import { Toaster } from "~/components/ui/sonner";
 import { CSPostHogProvider } from "~/app/_analytics/provider";
