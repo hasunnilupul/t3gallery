@@ -11,7 +11,7 @@ async function ImagesContainer() {
   return (
     <div className="flex flex-wrap justify-center gap-4 p-4">
       {images.map((img) => (
-        <div className="h-48 w-48 p-4" key={img.id}>
+        <div className="h-48 w-48 p-4 flex flex-col" key={img.id}>
           <Link href={`/img/${img.id}`}>
             <Image
               src={img.url}
