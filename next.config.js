@@ -78,6 +78,10 @@ const sentryConfig = {
   // https://docs.sentry.io/product/crons/
   // https://vercel.com/docs/cron-jobs
   automaticVercelMonitors: true,
+  sourcemaps: {
+    // Deletes source maps after uploading to Sentry
+    deleteSourcemapsAfterUpload: true,
+  },
 };
 
 export default withSentryConfig(coreConfig, sentryConfig);
