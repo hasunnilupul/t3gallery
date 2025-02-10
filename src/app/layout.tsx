@@ -8,6 +8,7 @@ import TopNav from "~/app/_components/topnav";
 import "~/styles/globals.css";
 import "@uploadthing/react/styles.css";
 import { uploadThingFileRouter } from "./api/uploadthing/core";
+import { Toaster } from "~/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "T3 Gallery",
@@ -30,7 +31,7 @@ export default function RootLayout({
          */
         routerConfig={extractRouterConfig(uploadThingFileRouter)}
       />
-      <html lang="en" className={`${GeistSans.variable}`}>
+      <html lang="en" className={`${GeistSans.variable} dark`}>
         <body>
           <div className="grid h-screen grid-rows-[auto,1fr]">
             <TopNav />
@@ -38,6 +39,7 @@ export default function RootLayout({
           </div>
           {modal}
           <div id="modal-root" />
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>
