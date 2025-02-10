@@ -3,11 +3,11 @@ import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
-import TopNav from "~/app/_components/topnav";
+import "@uploadthing/react/styles.css";
 
 import "~/styles/globals.css";
-import "@uploadthing/react/styles.css";
-import { uploadThingFileRouter } from "./api/uploadthing/core";
+import TopNav from "~/app/_components/topnav";
+import { uploadThingFileRouter } from "~/app/api/uploadthing/core";
 import { Toaster } from "~/components/ui/sonner";
 import { CSPostHogProvider } from "~/app/_analytics/provider";
 
