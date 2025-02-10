@@ -3,7 +3,7 @@ import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
-import TopNav from "~/app/_components/TopNav";
+import TopNav from "~/app/_components/topnav";
 
 import "~/styles/globals.css";
 import "@uploadthing/react/styles.css";
