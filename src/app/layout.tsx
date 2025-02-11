@@ -6,7 +6,7 @@ import { extractRouterConfig } from "uploadthing/server";
 import "@uploadthing/react/styles.css";
 
 import "~/styles/globals.css";
-import TopNav from "~/app/_components/topnav";
+// import TopNav from "~/app/_components/topnav";
 import { uploadThingFileRouter } from "~/app/api/uploadthing/core";
 import { Toaster } from "~/components/ui/sonner";
 import { CSPostHogProvider } from "~/app/_analytics/provider";
@@ -36,7 +36,7 @@ export default function RootLayout({
         <html lang="en" className={`${GeistSans.variable} dark`}>
           <body>
             <div className="grid h-screen grid-rows-[auto,1fr]">
-              <TopNav />
+              {/* <TopNav /> */}
               <main className="overflow-y-auto">{children}</main>
             </div>
             {modal}
