@@ -80,9 +80,7 @@ const sentryConfig = {
   automaticVercelMonitors: true,
   sourcemaps: {
     // Deletes source maps after uploading to Sentry
-    // deleteSourcemapsAfterUpload: true,
-    // Disable source maps uploading to Sentry
-    disable: true,
+    deleteSourcemapsAfterUpload: true,
   },
 };
 
